@@ -1,0 +1,33 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "plugins": ["@stylistic"],
+  "rules": {
+    "@stylistic/indent": ["error", 2],
+    "@stylistic/quotes": ["error", "single"],
+    "@stylistic/object-curly-spacing": ["error", "always"],
+    "@stylistic/semi": ["error", "never"],
+    "@stylistic/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": false
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        },
+        "multilineDetection": "brackets"
+      }
+    ],
+    "@stylistic/jsx-tag-spacing": [
+      "error",
+      {
+        "beforeSelfClosing": "always",
+        "closingSlash": "never",
+        "afterOpening": "never",
+        "beforeClosing": "never"
+      }
+    ]
+  }
+}
